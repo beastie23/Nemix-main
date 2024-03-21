@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nemix</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    body {
+      overflow-x: hidden; 
+    }
+
+    .company-name {
+      font-size: 40px;
+    }
+
+    .navbar-brand img {
+      width: 70px;
+      height: 67.77px;
+      margin-right: 10px;
+    }
+
+    .hero-section {
+      background-color: #f8f9fa;
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .hero-text {
+      color: #333;
+    }
+
+    .hero-text .first-two {
+      color: #E2E7E9;
+    }
+
+    .hero-text .last-two {
+      color: #16648e; 
+    }
+
+    #brand  {
+      font-size: 40px;
+      color: #E2E7E9;
+      font-family: "Intern", sans-serif;
+      font-weight: 10px;
+    }
+
+    #img  {
+      width: 70px;
+      height: 67.77px;
+      margin-top: 2px;
+    }
+
+    nav{
+      background: linear-gradient(to right, #000000, #1A1717);
+      padding: 10px;
+      overflow: hidden;
+    }
+
+    #btns {
+      font-size:20px;
+      color: #E2E7E9;
+      font-family: 'Intern', sans-serif;
+    }
+
+    #hero-bg  {
+      background: linear-gradient(to right, #000000, #1A1717);
+    }
+
+    .back-container {
+      position: relative;
+      height: 451px;
+      width: 1197px; 
+      margin: 0 auto; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap; 
+      transform: translateY(-40px);
+    }
+
+    #box-container {
+      position: absolute;
+      left: 0;
+      width: auto;
+      display: flex; 
+      flex-direction: column; 
+    }
+
+    .first-two {
+      position: absolute;
+      bottom: 100px;
+      left: 0; 
+      width: auto; 
+      display: flex; 
+      flex-direction: column; 
+    }
+
+    #box-content  {
+      font-size: 90px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .curve-top  {
+      position: absolute;
+      transform: translateY(-100%);
+    }
+
+    .ft-container {
+      height: 50vh;
+      width: auto;
+      background-color: #16648e;
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#" id="brand">
+        <img src="logo.png" alt="Your Logo" id="img">
+        NEMIX
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#" id="btns">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="btns">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="btns">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid hero-section" id="hero-bg">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="hero-text">
+          <div class="back-container">
+            <div id="box-container">
+              <span class="first-two" id="box-content">Welcome to</span>&nbsp;<span class="last-two" id="box-content">Nemix Development</span>
+            </div>
+          </div>
+        </h1>
+      </div>
+    </div>
+  </div>
+
+<!-- features section starts -->
+
+  <div class="ft-container">
+    <div class="top-container">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="curve-top">
+        <path fill="#16648e" fill-opacity="1" d="M0,128L48,144C96,160,192,192,288,192C384,192,480,160,576,149.3C672,139,768,149,864,170.7C960,192,1056,224,1152,224C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+      </svg>
+    </div>
+  </div>
+
+
+<!-- features section ends -->
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
